@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Gallery</title>
+<link rel="stylesheet" href="text.css">
+</head>
+<body>
+
+<h2>MY Photo Gallery</h2>
+
+<div class="gallery">
+    <div class="gallery">
+        <a href="gellery/background pattern.jpg">
+            <img src="gellery/background pattern.jpg" alt="Photo 1" width="400" height="500">
+            <div class="caption">Photo 1 Caption</div>
+        </a>
+        <a href="gellery/Coldd.jpg">
+            <img src="gellery/Coldd.jpg" alt="Photo 2" width="400" height = "500">
+            <div class="caption">Photo 2 Caption</div>
+        </a>
+        <a href="gellery/Flowers.jpg">
+            <img src="gellery/Flowers.jpg" alt="Photo 2" width="400" height = "500">
+            <div class="caption">Photo 2 Caption</div>
+        </a>
+        <a href="gellery/Little Krishna .jpg">
+            <img src="gellery/Little Krishna .jpg" alt="Photo 2" width="400" height = "500">
+            <div class="caption">Photo 2 Caption</div>
+        </a>
+        <a href="gellery/Motivation .jpg">
+            <img src="gellery/Motivation .jpg" alt="Photo 2" width="400" height = "500">
+            <div class="caption">Photo 2 Caption</div>
+        </a>
+        <a href="gellery/Summer flowers.jpg">
+            <img src="gellery/Summer flowers.jpg" alt="Photo 2" width="400" height = "500">
+            <div class="caption">Photo 2 Caption</div>
+        </a>
+        <a href="gellery/Kung Fu Panda.jpg">
+            <img src="gellery/Kung Fu Panda.jpg" alt="Photo 2" width="400" height = "500">
+            <div class="caption">Photo 2 Caption</div>
+        </a>
+    </div>
+    <!-- Add more gallery items as needed -->
+</div>
+
+<div class="lightbox" id="lightbox">
+    <span class="close-btn" onclick="closeLightbox()">&times;</span>
+    <img src="" class="lightbox-img" alt="Lightbox Image">
+</div>
+
+<script>
+    // Function to open lightbox
+    function openLightbox(imgSrc) {
+        document.getElementById('lightbox').style.display = 'flex';
+        document.querySelector('.lightbox-img').src = imgSrc;
+    }
+
+    // Function to close lightbox
+    function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
